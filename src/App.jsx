@@ -43,7 +43,7 @@ function App() {
         },
         (err) => {
           console.error("Error getting location:", err);
-          setError("Could not get location.");
+          setError("Sorry, there was a mistake. Can you tell us what city you are in?.");
         }
       );
     } else {
