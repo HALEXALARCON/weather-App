@@ -51,7 +51,6 @@ function App() {
     }
   }, []);
 
-  // Consultamos el clima cuando se tienen coordenadas
   useEffect(() => {
     if (coords) {
       axios
