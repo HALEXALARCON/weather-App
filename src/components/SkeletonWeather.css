@@ -1,0 +1,51 @@
+/* Este CSS define el grid layout para la skeleton card */
+.skeleton-weather-card {
+  display: grid;
+  width: 22.5rem;
+  height: 40rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.9);
+  /* Definimos cinco filas para los distintos contenidos y un gap entre ellos */
+  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-areas:
+    "title"
+    "location"
+    "icon"
+    "description"
+    "details"
+    "temp"
+    "button";
+  gap: 1rem;
+}
+
+/* Asignamos cada área a su correspondiente clase */
+.skeleton-title {
+  grid-area: title;
+}
+
+.skeleton-location {
+  grid-area: location;
+}
+
+.skeleton-icon {
+  grid-area: icon;
+}
+
+.skeleton-description {
+  grid-area: description;
+}
+
+.skeleton-details {
+  grid-area: details;
+}
+
+.skeleton-temp {
+  grid-area: temp;
+}
+
+.skeleton-button {
+  grid-area: button;
+}
