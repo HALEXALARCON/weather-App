@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Weather from "./components/Weather";
-import SkeletonWeather from "./components/SkeletonWeather"; // Componente skeleton
+import SkeletonWeather from "./components/skeletonWeather"; // Componente skeleton
 import FallbackMap from "./components/FallbackMap"; // Componente para búsqueda de ubicación
 import { thunderstorm, rain, drizzle, clouds, clear, snow, atmosphere } from "../public";
 
