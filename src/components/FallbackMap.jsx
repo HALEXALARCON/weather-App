@@ -18,7 +18,7 @@ function FallbackMap({ setCoords, error }) {
         const lat = parseFloat(data[0].lat);
         const lon = parseFloat(data[0].lon);
         setCoordsFallback({ lat, lng: lon });
-        // También actualizamos las coordenadas en App.jsx
+        
         setCoords({ lat, lon });
       }
     } catch (err) {

@@ -36,8 +36,8 @@ body {
 /* Tarjeta del clima */
 .weather-card {
   position: relative;
-  z-index: 3;
-  background-image: url(/clouds.jpg);
+  z-index: 1;
+  background-image: url(/public/clouds\.jpg);
   border-radius: 12px;
   box-shadow: 0 4px 10px #0d506e1a, #0d506e1a, #0d506e1a;
   padding: 0;
@@ -45,7 +45,7 @@ body {
   height: 99%;
   margin: 0 auto;
   text-align: center;
-  top: 47%;
+  top: 45.7%;
   transform: translateY(-50%);
 }
 
@@ -62,10 +62,9 @@ body {
 
 /* Títulos y textos */
 .weather-title {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   margin-bottom: 10px;
   color: #333;
-  text-shadow:  4px 8px 10px #000, #a5a5a5, #000, #000;
 }
 
 .weather-location {
