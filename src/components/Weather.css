@@ -36,7 +36,7 @@ body {
 /* Tarjeta del clima */
 .weather-card {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   background-image: url(/clouds.jpg);
   border-radius: 12px;
   box-shadow: 0 4px 10px #0d506e1a, #0d506e1a, #0d506e1a;

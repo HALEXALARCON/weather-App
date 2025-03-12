@@ -34,7 +34,6 @@ function App() {
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState(null);
 
-  // Intentamos obtener la ubicación automáticamente
   useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -83,12 +82,10 @@ function App() {
     }
   }, [coords]);
 
-  // Si hay error y no hay coordenadas, mostramos el FallbackMap
   if (error && !coords) {
     return <FallbackMap setCoords={setCoords} error={error} />;
   }
 
-  // Mientras no se carguen los datos del clima, mostramos el Skeleton
   if (!weather) {
     return <SkeletonWeather />;
   }
