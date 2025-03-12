@@ -42,12 +42,12 @@ function App() {
           setCoords({ lat: coords.latitude, lon: coords.longitude });
         },
         (err) => {
-          console.error("Error obteniendo ubicación:", err);
-          setError("No se pudo obtener la ubicación.");
+          console.error("Error getting location:", err);
+          setError("Could not get location.");
         }
       );
     } else {
-      setError("Geolocalización no soportada por el navegador.");
+      setError("Geolocation not supported by the browser.");
     }
   }, []);
 
@@ -78,8 +78,8 @@ function App() {
           });
         })
         .catch((err) => {
-          console.error("Error obteniendo el clima:", err);
-          setError("No se pudo obtener la información del clima.");
+          console.error("Error getting weather:", err);
+          setError("Tell us what city you are from.");
         });
     }
   }, [coords]);
